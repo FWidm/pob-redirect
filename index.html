@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
 <head>
-    <title>HTML Meta Tag</title>
+    <title>POB Redirect service</title>
     <script>
         function redirect() {
             const params = new URL(location.href).searchParams;
@@ -13,8 +13,14 @@
             if (pobbin) {
                 window.location.href = "pob:pobbin/" + pobbin;
             }
+            const poeninja = params.get("poeninja");
+            if (pobbin) {
+                window.location.href = "pob:poeninja/" + pobbin;
+            }
         }
     </script>
 </head>
 <body onload="redirect();">
+<p>Please enable Javascript to enable opening up path of building automatically.</p>
+</body>
 </html>
