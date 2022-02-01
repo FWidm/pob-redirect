@@ -17,10 +17,14 @@
             if (poeninja) {
                 window.location.href = "pob:poeninja/" + pobbin;
             }
+            setTimeout(function() {
+                window.close()
+            }, 5000);
         }
+
     </script>
 </head>
 <body onload="redirect();">
-<p>Please enable Javascript to enable opening up path of building automatically.</p>
+<p>Please enable Javascript to enable opening up path of building automatically. This window will close after 5 seconds automatically.</p>
 </body>
 </html>
